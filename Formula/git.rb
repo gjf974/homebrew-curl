@@ -30,6 +30,8 @@ class Git < Formula
     url "https://cpan.metacpan.org/authors/id/R/RJ/RJBS/Net-SMTP-SSL-1.04.tar.gz"
     sha256 "7b29c45add19d3d5084b751f7ba89a8e40479a446ce21cfd9cc741e558332a00"
   end
+  
+  option "with-curl", "Use Homebrew s version of curl library"
 
   def install
     # If these things are installed, tell Git build system not to use them
